@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GSAP Things
 
-## Getting Started
+A personal collection of [GSAP](https://gsap.com/) (GreenSock Animation Platform) techniques, patterns, and experiments. This repository documents what I learn as I build small demos and notes—useful as a reference and as a portfolio of motion work.
 
-First, run the development server:
+## About
+
+Each addition here is meant to be **focused and reproducible**: one idea, one demo, or one pattern at a time. The goal is clarity over scope—something I can revisit months later and still understand quickly.
+
+## Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **UI:** React, TypeScript, [Tailwind CSS](https://tailwindcss.com/)
+- **Animation:** GSAP (to be added as demos land)
+
+## Techniques checklist
+
+Planned topics and demos. Extend this list as you add examples; check items when they are implemented and documented here.
+
+- [ ] *Placeholder—replace with concrete techniques (e.g. timelines, ScrollTrigger, Flip, custom eases, React + `useGSAP`).*
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Resources
 
-## Learn More
+- [GSAP documentation](https://gsap.com/docs/v3/)
+- [GSAP learning center](https://gsap.com/resources/)
+- [Next.js documentation](https://nextjs.org/docs)
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Private learning repository unless otherwise stated.
