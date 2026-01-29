@@ -21,12 +21,16 @@ export default function Footer() {
     center: "M0-0.3C0-0.3,464,0,1139,0s1139-0.3,1139-0.3V683H0V-0.3z",
   };
 
+  
   useGSAP(
     () => {
+      // default footer opacity is 0 to prevent flickering
+      gsap.to(footerRef.current, { opacity: 1 })
+
       // Hàm xử lý chung cho cả 2 hướng cuộn
       const triggerBounce = (self: ScrollTrigger) => {
         const velocity = self.getVelocity();
-        // Lấy trị tuyệt đối vì cuộn lên velocity sẽ mang giá trị âm
+        // Lấy trị tuyệt đối vì cuộn lên velocity sẽ mang giá trị âm, nếu muốn làm cả 2 hướng
         const variation = Math.min(Math.abs(velocity / 10000), 0.5);
 
         gsap.fromTo(
