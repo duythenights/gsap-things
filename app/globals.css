@@ -178,6 +178,10 @@
   --red: #cd237f;
   --orange: var(--color-orangey);
   accent-color: var(--color-shockingly-green);
+  --scrollbar-track: #161816;
+  --scrollbar-thumb-top: var(--color-lt-green);
+  --scrollbar-thumb-bottom: var(--color-shockingly-green);
+  --scrollbar-thumb-hover: #5ef06e;
 }
 
 /* lovely fluid fonts */
@@ -931,6 +935,48 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+html {
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb-bottom) var(--scrollbar-track);
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 999px;
+  margin: 6px 0;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 3px solid var(--scrollbar-track);
+  background: linear-gradient(
+    180deg,
+    var(--scrollbar-thumb-top) 0%,
+    var(--scrollbar-thumb-bottom) 100%
+  );
+  background-clip: padding-box;
+  box-shadow: 0 0 14px rgba(10, 228, 72, 0.35);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    var(--scrollbar-thumb-hover) 0%,
+    var(--scrollbar-thumb-bottom) 100%
+  );
+  background-clip: padding-box;
+}
+
+html::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track);
 }
 
 #smooth-content .home {
