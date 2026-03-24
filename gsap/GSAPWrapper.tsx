@@ -25,7 +25,6 @@ export default function GSAPWrapper({ children }: { children: React.ReactNode })
     <div id="smooth-wrapper">
       <div id="smooth-content">
         {children}
-        <Footer/>
       </div>
     </div>
   );

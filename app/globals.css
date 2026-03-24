@@ -984,8 +984,9 @@ html::-webkit-scrollbar-corner {
   overflow: visible;
   width: 100%;
   /* set a height because the contents are position: absolute, thus natively there's no height */
-  height: 2000px;
+  /* min-height: 2000px; */
   padding-top: 80px;
+  padding-bottom: 460px;
   background-image:
     linear-gradient(
       rgba(255, 255, 255, 0.07) 2px,

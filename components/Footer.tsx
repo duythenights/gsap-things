@@ -55,7 +55,7 @@ export default function Footer() {
   );
 
   return (
-    <div className="footer" ref={footerRef}>
+    <div className="footer absolute bottom-0 left-0 w-full" ref={footerRef}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         id="footer-img"
